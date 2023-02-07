@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Music for night</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gmtQnZ14yo8" title="YouTube video player" frameborder="0"  ></iframe>
-    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/vn/album/fly-above-the-clouds/1582425318?i=1582425550"></iframe>
+    <div class="container">
+        <div class="timer">
+            <div class="time" id="time">
+                <input type="text" class="text" id="h" maxlength="2"> :
+                <input type="text" class="text" id="m" maxlength="2"> :
+                <input type="text" class="text" id="s" maxlength="2">
+            </div>
+            <div class="time-start" id="time-start">
+                <span id="h-s">00</span> :
+                <span id="m-s">00</span> :
+                <span id="s-s">00</span>
+            </div>
+        </div>
+        <div class="description">
+            Music for night        
+            <a href="https://www.youtube.com/@IdyllicMelody" class="author">Idyllic Melody</a> 
+        </div>
+        <center>
+            <button class="btn" id="btnStart">
+                &nbsp;►
+            </button>
+            <button class="btn none" id="btnStop">
+               | |
+            </button>
+        </center>
+        
+    </div>
+
+    <audio controls class="none" id="music">
+        <source src="audio/music.mp3" type="audio/mpeg">
+
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
